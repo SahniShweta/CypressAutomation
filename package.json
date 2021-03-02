@@ -1,0 +1,41 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashBoardTest": "npm run test -- --record --key 6cd783ad-24da-40d1-abbe-44b370cd4b8b --reporter mochawesome",
+    "frameworkTest": "npm run test -- --spec \"cypress/integration/examples/TestFramework.js\""
+  },
+  "retries": {
+    "runMode": 1
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "Shweta",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.5.0",
+    "cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-sql-server": "^1.0.0",
+    "mocha": "^8.3.0",
+    "mochawesome": "^6.2.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "github:mysqljs/mysql",
+    "speech": "^0.2.1"
+  }
+}

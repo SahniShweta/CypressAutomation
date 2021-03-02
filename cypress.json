@@ -1,0 +1,31 @@
+
+{
+  "chromeWebSecurity": false,
+  "modifyObstructiveCode": false,
+  "experimentalSourceRewriting": true,
+  "pageLoadTimeout": 60000,
+  "taskTimeout": 60000,
+  "defaultCommandTimeout": 8000,
+  "reporter": "mochawesome",
+  "env": {
+    "url": "https://rahulshettyacademy.com/angularpractice/",
+    "db": {
+      "user": "root",
+      "password": "Gaadi@81",
+      "host": "localhost"
+  }
+    
+  },
+  "testFiles": "**/*.*",
+  "projectId": "p39urw",
+  "db": {
+    "userName": "Shweta",
+    "password": "Gaadi@81",
+    "server": "localhost",
+    "options": {
+        "database": "AdventureWorks2012",
+        "encrypt": true,
+        "rowCollectionOnRequestCompletion" : true
+    }
+}
+}
